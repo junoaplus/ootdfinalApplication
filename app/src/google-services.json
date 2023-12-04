@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "941992113151",
+    "project_id": "ootdfinalapplication",
+    "storage_bucket": "ootdfinalapplication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:941992113151:android:755d67d5b7bce1324a6dca",
+        "android_client_info": {
+          "package_name": "com.example.ootdfinalapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAj1ODY6NiLTDJq88FU9jdJKRpfhhmUAW4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

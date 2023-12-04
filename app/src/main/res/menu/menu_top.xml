@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/entryFragment"
+        android:icon="@drawable/home"
+        android:title="entry" />
+    <item
+        android:id="@+id/sourchFragment"
+        android:icon="@drawable/sourch"
+        android:title="sourch" />
+    <item
+        android:id="@+id/addFragment"
+        android:icon="@drawable/add"
+        android:title="add" />
+    <item
+        android:id="@+id/lankFragment"
+        android:icon="@drawable/lank"
+        android:title="lank" />
+    <item
+        android:id="@+id/myFragment"
+        android:icon="@drawable/my"
+        android:title="my" />
+</menu>

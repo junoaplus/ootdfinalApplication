@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/loginFragment">
+
+
+    <fragment
+        android:id="@+id/entryFragment"
+        android:name="com.example.ootdfinalapplication.entryFragment"
+        android:label="홈 화면"
+        tools:layout="@layout/fragment_entry"
+        app:startDestination="@id/entryFragment" >
+
+        <action
+            android:id="@+id/action_entryFragment_to_sourchFragment"
+            app:destination="@id/sourchFragment" />
+        <action
+            android:id="@+id/action_entryFragment_to_lankFragment"
+            app:destination="@id/lankFragment" />
+        <action
+            android:id="@+id/action_entryFragment_to_myFragment"
+            app:destination="@id/myFragment" />
+        <action
+            android:id="@+id/action_entryFragment_to_add2Fragment"
+            app:destination="@id/add2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sourchFragment"
+        android:name="com.example.ootdfinalapplication.sourchFragment"
+        android:label="검색화면"
+        tools:layout="@layout/fragment_sourch"
+        app:startDestination="@id/sourchFragment">
+        <action
+            android:id="@+id/action_sourchFragment_to_resourtFragment"
+            app:destination="@id/resourtFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resourtFragment"
+        android:name="com.example.ootdfinalapplication.resourtFragment"
+        android:label="결과화면"
+        tools:layout="@layout/fragment_resourt"
+        app:startDestination="@id/resourtFragment" />
+    <fragment
+        android:id="@+id/add2Fragment"
+        android:name="com.example.ootdfinalapplication.add2Fragment"
+        android:label="문구입력화면"
+        tools:layout="@layout/fragment_add2"
+        app:startDestination="@id/addFragment" >
+        <action
+            android:id="@+id/action_add2Fragment_to_myFragment"
+            app:destination="@id/myFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lankFragment"
+        android:name="com.example.ootdfinalapplication.lankFragment"
+        android:label="순위화면"
+        tools:layout="@layout/fragment_lank"
+        app:startDestination="@id/lankFragment">
+        <action
+            android:id="@+id/action_lankFragment_to_resourtFragment"
+            app:destination="@id/resourtFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myFragment"
+        android:name="com.example.ootdfinalapplication.myFragment"
+        android:label="마이페이지"
+        tools:layout="@layout/fragment_my"
+        app:startDestination="@id/myFragment" />
+    <fragment
+        android:id="@+id/newFragment"
+        android:name="com.example.ootdfinalapplication.newFragment"
+        android:label="fragment_new"
+        tools:layout="@layout/fragment_new"
+        app:startDestination="@id/newFragment" >
+        <action
+            android:id="@+id/action_newFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.ootdfinalapplication.loginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login"
+        app:startDestination="@id/loginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_newFragment"
+            app:destination="@id/newFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_entryFragment"
+            app:destination="@id/entryFragment" />
+    </fragment>
+</navigation>
